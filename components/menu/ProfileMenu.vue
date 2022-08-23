@@ -50,18 +50,18 @@
             </NuxtLink>
           </li> -->
 
-          <!-- <li
+          <li
             v-if="$auth.user.is_seller"
             :class="$nuxt.$route.path == '/dashboard/payment' ? 'active' : ''"
-          > -->
+          >
           <!-- /dashboard/payment?type=subscription for previous subscription mood -->
-            <!-- <NuxtLink to="/dashboard/payment?type=subscription"
+            <NuxtLink to="/dashboard/payment?type=subscription"
               ><img src="~/assets/images/icon/payment.svg" class="img-fluid" />
                 সাবস্ক্রিপশন 
             </NuxtLink>
-          </li> -->
+          </li>
 
-          <li>
+          <!-- <li>
             <NuxtLink to="/category"
               ><img
                 src="~/assets/images/icon/list-menu-dashboard.svg"
@@ -69,7 +69,7 @@
               />
                ক্যাটাগরি
             </NuxtLink>
-          </li>
+          </li> -->
 
           <li>
             <NuxtLink to="/new-post"

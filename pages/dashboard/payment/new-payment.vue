@@ -395,6 +395,7 @@ export default {
       this.$axios.$post("apply/coupon", this.coupon_form).then((response) => {
         if (response.status === "success") {
           // call success message
+          // console.log(response)
           this.toastMessage(response);
           this.getAppliedCoupon();
         } else {

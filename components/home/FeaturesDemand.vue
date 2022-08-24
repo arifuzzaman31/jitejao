@@ -140,7 +140,7 @@
     },
     async fetch() {
       const response = await this.$axios.$get(
-        "/get-demand"
+        "/demand-list?no_paginate=yes&take_only=8"
       );
       this.category_post_list = response
       this.post_count = response.data.length

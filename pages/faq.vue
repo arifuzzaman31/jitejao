@@ -89,17 +89,17 @@ export default {
 
   head() {
     return {
-      title: "বিডো । সচরাচর জিজ্ঞাসিত প্রশ্ন",
+      title: "জিতে যাও । সচরাচর জিজ্ঞাসিত প্রশ্ন",
       meta: [
         {
           hid: "twitter:title",
           name: "twitter:title",
-          content: "বিডো । সচরাচর জিজ্ঞাসিত প্রশ্ন",
+          content: "জিতে যাও । সচরাচর জিজ্ঞাসিত প্রশ্ন",
         },
         {
           hid: "og:title",
           property: "og:title",
-          content: "বিডো । সচরাচর জিজ্ঞাসিত প্রশ্ন",
+          content: "জিতে যাও । সচরাচর জিজ্ঞাসিত প্রশ্ন",
         },
       ],
     };

@@ -12,17 +12,17 @@ export default {
       ? process.env.baseUrl + this.$route.path
       : process.env.baseUrl;
     return {
-      title: "বিডো ।  সকল পোস্ট",
+      title: "জিতে যাও ।  সকল পোস্ট",
       meta: [
         {
           hid: "twitter:title",
           name: "twitter:title",
-          content: "বিডো ।  সকল ডিমান্ড",
+          content: "জিতে যাও ।  সকল ডিমান্ড",
         },
         {
           hid: "og:title",
           property: "og:title",
-          content: "বিডো ।  সকল ডিমান্ড",
+          content: "জিতে যাও ।  সকল ডিমান্ড",
         },
         {
           hid: "og:url",

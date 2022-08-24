@@ -39,7 +39,7 @@ export default {
 
   head() {
     return {
-      title: "বিডো । প্রোফাইল",
+      title: "জিতে যাও । প্রোফাইল",
     };
   },
 };

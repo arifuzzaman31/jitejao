@@ -4,7 +4,7 @@
       <b-row>
         <div class="dashboard-title text-center mb-70 mt-30">
           <h2 class="mb-10">গাইডলাইন</h2>
-          <p>বিডও কিভাবে ব্যবহার করবেন</p>
+          <p>জিতে যাও কিভাবে ব্যবহার করবেন</p>
         </div>
       </b-row>
 
@@ -12,7 +12,7 @@
         <div class="col-md-3 mb-xs-30">
             <div class="user-guideline">
                 <ul>
-                    <li><a href="#bidoguide1">বিডও  কি </a></li>
+                    <li><a href="#bidoguide1">জিতে যাও  কি </a></li>
                     <li><a href="#bidoguide2">কিভাবে কাজ করে ?</a></li>
                     <li><a href="#bidoguide3">কিভাবে  ডিমান্ড করবেন ?</a></li>
                     <li><a href="#bidoguide4">কিভাবে  বিড করবেন</a></li>

@@ -3,7 +3,7 @@ import fs from 'fs'
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Bido | বিডো ',
+    title: 'JiteJao | জিতে যাও ',
     meta: [
       { charset: 'utf-8' },
       { name:'google', content:'notranslate'},

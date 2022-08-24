@@ -634,17 +634,17 @@ export default {
       ? process.env.baseUrl + this.$route.path
       : process.env.baseUrl;
     return {
-      title: "বিডো । নতুন ডিমান্ড",
+      title: "জিতে যাও । নতুন ডিমান্ড",
       meta: [
         {
           hid: "twitter:title",
           name: "twitter:title",
-          content: "বিডো । নতুন ডিমান্ড",
+          content: "জিতে যাও । নতুন ডিমান্ড",
         },
         {
           hid: "og:title",
           property: "og:title",
-          content: "বিডো । নতুন ডিমান্ড",
+          content: "জিতে যাও । নতুন ডিমান্ড",
         },
         {
           hid: "og:url",

@@ -58,7 +58,7 @@ export default {
       ? process.env.baseUrl + this.$route.path
       : process.env.baseUrl;
     return {
-      title: `বিডো ।  ${this.category.name}`,
+      title: `জিতে যাও ।  ${this.category.name}`,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {

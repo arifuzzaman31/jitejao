@@ -321,7 +321,7 @@ export default {
 
   head() {
     return {
-      title: "বিডো । আমার  পয়েন্ট",
+      title: "জিতে যাও । আমার  পয়েন্ট",
     };
   },
 };

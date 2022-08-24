@@ -23,14 +23,14 @@ export default {
       : process.env.baseUrl;
     return {
       title:
-        "বিডো ।  bido | বিডো বাংলাদেশের প্রথম এবং এক মাত্র ডিমান্ড এবং নিলাম বেসড মার্কেটপ্লেস",
+        "জিতে যাও ।  JiteJao | জিতে যাও বাংলাদেশের প্রথম এবং এক মাত্র ডিমান্ড এবং নিলাম বেসড মার্কেটপ্লেস",
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
           hid: "description",
           name: "description",
           content:
-            "বিডো বাংলাদেশের প্রথম এবং এক মাত্র ডিমান্ড এবং নিলাম বেসড মার্কেটপ্লেস | bido first demand and nilam based website in bangladesh",
+            "জিতে যাও বাংলাদেশের প্রথম এবং এক মাত্র ডিমান্ড এবং নিলাম বেসড মার্কেটপ্লেস | bido first demand and nilam based website in bangladesh",
         },
 
         {
@@ -42,7 +42,7 @@ export default {
         {
           hid: "twitter:title",
           name: "twitter:title",
-          content: "বিডো । bido",
+          content: "জিতে যাও । bido",
         },
         {
           hid: "twitter:description",
@@ -57,12 +57,12 @@ export default {
         {
           hid: "twitter:image:alt",
           name: "twitter:image:alt",
-          content: "বিডো । bido",
+          content: "জিতে যাও । bido",
         },
         {
           hid: "og:title",
           property: "og:title",
-          content: "বিডো । bido",
+          content: "জিতে যাও । bido",
         },
         {
           hid: "og:description",

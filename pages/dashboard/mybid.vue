@@ -34,7 +34,7 @@ export default {
   middleware: "auth",
   head() {
     return {
-      title: "বিডো । আমার বিডসমূহ",
+      title: "জিতে যাও । আমার বিডসমূহ",
     };
   },
 };

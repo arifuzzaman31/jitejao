@@ -308,7 +308,7 @@ export default {
 
   head() {
     return {
-      title: "বিডো । ড্যাশবোর্ড",
+      title: "জিতে যাও । ড্যাশবোর্ড",
     };
   },
 };

@@ -92,7 +92,7 @@ export default {
       ? process.env.baseUrl + this.$route.path
       : process.env.baseUrl;
     return {
-      title: "বিডো । প্রাইসিং প্ল্যান  ",
+      title: "জিতে যাও । প্রাইসিং প্ল্যান  ",
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
@@ -103,28 +103,28 @@ export default {
         {
           hid: "twitter:title",
           name: "twitter:title",
-          content: "বিডো । প্রাইসিং প্ল্যান",
+          content: "জিতে যাও । প্রাইসিং প্ল্যান",
         },
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content: "বিডো । প্রাইসিং প্ল্যান",
+          content: "জিতে যাও । প্রাইসিং প্ল্যান",
         },
 
         {
           hid: "og:title",
           property: "og:title",
-          content: "বিডো । প্রাইসিং প্ল্যান",
+          content: "জিতে যাও । প্রাইসিং প্ল্যান",
         },
         {
           hid: "og:description",
           property: "og:description",
-          content: "বিডো । প্রাইসিং প্ল্যান",
+          content: "জিতে যাও । প্রাইসিং প্ল্যান",
         },
         {
           hid: "og:image:alt",
           property: "og:image:alt",
-          content: "বিডো । প্রাইসিং প্ল্যান",
+          content: "জিতে যাও । প্রাইসিং প্ল্যান",
         },
         {
           hid: "og:url",

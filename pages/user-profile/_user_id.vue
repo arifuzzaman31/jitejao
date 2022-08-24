@@ -195,7 +195,7 @@ export default {
       ? process.env.baseUrl + this.$route.path
       : process.env.baseUrl;
     return {
-      title: "বিডো । প্রোফাইল - " + this.user.name,
+      title: "জিতে যাও । প্রোফাইল - " + this.user.name,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {

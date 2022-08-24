@@ -136,7 +136,7 @@ export default {
 
   head() {
     return {
-      title: "বিডো । এড পয়েন্ট",
+      title: "জিতে যাও । এড পয়েন্ট",
     };
   },
 };

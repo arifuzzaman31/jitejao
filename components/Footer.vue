@@ -5,7 +5,7 @@
          <div class="col-md-6">
            <div class="app-download">
                <div class="content text-center-xs">
-                 <h2> ডাউনলোড করুন বিডোও এপ্স আর উপভোগ করুন দারুন সব ফিচার </h2>
+                 <h2> ডাউনলোড করুন 'জিতে যাও' এপ্স আর উপভোগ করুন দারুন সব ফিচার </h2>
                  <!-- <p class="mt-10">এপ্লাই কুপন  <span class="coupon-appdownload bg-purple color-white">DigitalBangladesh</span></p> -->
                </div>
            </div>
@@ -38,7 +38,7 @@
                   </NuxtLink>
 
                   <p class="des">
-                    বিডো বাংলাদেশের প্রথম এবং একমাত্র ডিমান্ড বেসড মার্কেটপ্লেস।
+                    জিতে যাও বাংলাদেশের প্রথম এবং একমাত্র ডিমান্ড বেসড মার্কেটপ্লেস।
                   </p>
 
                   <div class="f-social">

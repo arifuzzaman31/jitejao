@@ -20,7 +20,7 @@
                 <div class="content p20 text-center">
                   <NuxtLink to="/"
                     ><img
-                      src="~/assets/images/logo_white.png"
+                      src="~/assets/images/logo-footer.png"
                       class="img-fluid mt-5 mb-50"
                       width="100"
                   /></NuxtLink>

@@ -111,6 +111,12 @@
             >
               এডিট করুন
             </NuxtLink>
+                        <NuxtLink
+              to=""
+              class="btn button-small gradient-purple-secondary color-white bid-button ml-5"
+            >
+              লগ আউট
+            </NuxtLink>
           </div>
         </div>
       </div>

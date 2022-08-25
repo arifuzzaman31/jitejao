@@ -5,15 +5,15 @@
          <div class="col-md-6">
            <div class="app-download">
                <div class="content text-center-xs">
-                 <h2> ডাউনলোড করুন 'জিতে যাও' এপ্স আর উপভোগ করুন দারুন সব ফিচার </h2>
+                 <h2> ডাউনলোড করুন 'JiteJao' এপ্স আর উপভোগ করুন দারুন সব ফিচার </h2>
                  <!-- <p class="mt-10">এপ্লাই কুপন  <span class="coupon-appdownload bg-purple color-white">DigitalBangladesh</span></p> -->
                </div>
            </div>
          </div>
            <div class="col-md-6">
-                <div class="app-icon mt-30 float-right">
-                        <NuxtLink to="/"><img src="~/assets/images/play-store.png" class="img-fluid" alt="play-store" width="150"></NuxtLink>
-                        <NuxtLink to="/"><img src="~/assets/images/app-store.png" class="img-fluid ml-15" alt="play-store" width="150"></NuxtLink>
+                <div class="app-icon mt-30 text-right text-center-xs">
+                        <NuxtLink to="#"><img src="~/assets/images/play-store.png" class="img-fluid" alt="play-store" width="150"></NuxtLink>
+                        <!-- <NuxtLink to="/"><img src="~/assets/images/app-store.png" class="img-fluid ml-15" alt="play-store" width="150"></NuxtLink> -->
                </div>
            </div>
 
@@ -44,13 +44,13 @@
                   <div class="f-social">
                     <ul>
                       <li>
-                        <a href="https://www.facebook.com/bidoBD" target="_blank" ><i class="fb fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/JiteJaocom-105374625610977" target="_blank" ><i class="fb fab fa-facebook-f"></i></a>
                       </li>
                         <!--<li>
                         <a href="#"><i class="tw fab fa-twitter"></i></a>
                       </li> -->
                       <li>
-                        <a href="https://www.youtube.com/channel/UCS4trLlMNp5AHkG1f4m64qw" target="_blank" ><i class="yt fab fa-youtube"></i></a>
+                        <a href="#" target="_blank" ><i class="yt fab fa-youtube"></i></a>
                       </li>
                       <!--<li>
                         <a href="#"><i class="ir fab fa-instagram"></i></a>
@@ -135,13 +135,13 @@
                     <li>
                       <p>
                         <b><i class="fas fa-envelope"></i></b>&nbsp;
-                        info@bidodevs.xyz
+                        support@jitejao.com
                       </p>
                     </li>
                      <li>
                       <p>
                         <b><i class="fas fa-envelope"></i></b>&nbsp;
-                        complain@bidodevs.xyz
+                        complain@jitejao.com
                       </p>
                     </li>
                    <!-- <li>

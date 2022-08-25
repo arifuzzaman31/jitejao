@@ -16,7 +16,7 @@
       </b-row>
 
       <b-row class="mt-30-xs">
-        <div class="col-lg-6 col-sm-6 xs-mb15 mb-30">
+        <div class="col-lg-6 col-sm-6 xs-mb15 mb-15">
           <div
             class="dashboard-card-list dashboard-payment-card card-gradient-blue p20 clearfix br-5"
           >
@@ -28,19 +28,17 @@
               />
             </div>
             <div class="dashboard-card-content text-right">
-              <h3 class="color-white mb-5">সাবস্ক্রিপশন প্লান</h3>
-              <h4 class="color-white mb-5">
-                {{ replaceNumbersE2B(subscription_plan) }} ৳ (১ মাস)
-              </h4>
+              <h3 class="color-white mb-5">সাবস্ক্রিপশন</h3>
+
               <NuxtLink
                 to="/dashboard/payment/new-payment"
                 class="button button-sm font-b bg-white color-dark-blue"
-                >আরো প্ল্যান
+                > প্ল্যান দেখুন 
               </NuxtLink>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-sm-6 xs-mb15 mb-30">
+        <div class="col-lg-6 col-sm-6 xs-mb15 mb-15">
           <div
             class="dashboard-card-list dashboard-payment-card card-gradient-red p20 clearfix br-5"
           >
@@ -54,9 +52,8 @@
             <div class="dashboard-card-content text-right">
               <h2 class="color-white mb-5"> আমার সাবস্ক্রিপশন</h2>
               <p class="color-white mb-5">
-                এক্সপায়ার ডেটঃ 
+                মেয়াদ : {{ user.subscription_expired_at_text }}
               </p>
-              <h3 class="color-white">{{ user.subscription_expired_at_text }}</h3>
             </div>
           </div>
         </div>

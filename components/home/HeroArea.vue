@@ -19,14 +19,17 @@
                   to="/new-post"
                   >ডিমান্ড পোস্ট করুন <i class="fas fa-long-arrow-alt-right ml-20"></i></NuxtLink>
 
+ <!-- v-b-modal.modal-center @click="showModal1" -->
+ 
             <div class="hero-vedio-popup clearfix  mt-xs-15"
-                 v-b-modal.modal-center @click="showModal1">
-                  <div class="hero-vedio-popup-image bg-red-op-10 ">
-                    <img src="~/assets/images/icon/home-demand-video.svg" alt="Demand" width="40" />
+                
+                 >
+                  <div class="hero-vedio-popup-image  ">
+                    <img  src="~/assets/images/icon/bido-icon-mobile.svg" alt="Demand" width="28" />
                   </div>
                   <div class="content">
-                    <h2>ডিমান্ড কিভাবে করবেন ? </h2>
-                        <b-modal
+                    <a href="#"><h2>ডিমান্ড পোস্ট ও বিড কিভাবে করবেন ? </h2></a>
+                        <!-- <b-modal
                           id="h-video-modal1"
                           centered
                           modal-footer="No"
@@ -40,7 +43,7 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen
                           ></iframe>
-                        </b-modal>
+                        </b-modal> -->
                     <p>
                     </p>
                   </div>
@@ -118,14 +121,18 @@ export default {
     line-height: 40px;
     border-radius: 50px;
     float: left;
-    margin-right: 15px;
+    margin-right: 10px;
     /* background-color: #fff; */
+    text-align: center;
 }
 .hero-vedio-popup h2{
   text-align: left;
-  line-height: 2.1;
+  line-height: 1.4;
   font-weight: normal;
-  font-size: 20px
+  font-size: 20px;
+  margin-top: 8px;
+  text-decoration: underline;
+
 }
 .hero-vedio-popup-image.bg-purple {
   background-color: rgba(190, 99, 249, 0.1);

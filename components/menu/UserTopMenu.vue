@@ -185,7 +185,7 @@
                 >
               </li>
               <li>
-                <NuxtLink v-if="$auth.loggedIn" to="/dashboard/profile">
+                <NuxtLink v-if="$auth.loggedIn" to="/dashboard">
                   প্রোফাইল</NuxtLink
                 >
               </li>

@@ -224,7 +224,7 @@
         <div class="col-md-4">
           <b-skeleton-img height="150px"></b-skeleton-img>
         </div>
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
           <b-skeleton-img height="150px"></b-skeleton-img>
         </div>
         <div class="col-md-4">
@@ -232,12 +232,12 @@
         </div>
         <div class="col-md-4">
           <b-skeleton-img height="150px"></b-skeleton-img>
-        </div>
+        </div> -->
       </b-row>
       <!-- end skelton  -->
       <!-- dashboard card end -->
 
-      <!-- <UserProfile /> -->
+      <UserProfile />
     </b-container>
     <Footer />
   </div>

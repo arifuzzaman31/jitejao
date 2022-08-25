@@ -34,10 +34,7 @@
               <div class="display-fl">
                 <NuxtLink to="/new-post" title="New Post">
                 <span class="notification-icon">
-                   <img
-                  src="~/assets/images/icon/add-post-header.svg"
-                  class="img-fluid"
-                />
+                   <a href="#" class="button button-small gradient-purple-secondary color-white bid-button mr-10">পোস্ট করুন</a>
                 </span>
                 </NuxtLink>
                 <!-- <NuxtLink to="/post">
@@ -147,9 +144,26 @@
                   রেজিস্ট্রেশন</NuxtLink
                 >
               </li>
+                <li>
+                <NuxtLink v-if="$auth.loggedIn" to="/dashboard/mypost" class="color-purple">
+                  আমার পোস্ট
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink v-if="$auth.loggedIn" to="/dashboard/mybid" class="color-purple">
+                  আমার বিড
+                </NuxtLink>
+              </li>
+              <hr class="menu-border" v-if="$auth.loggedIn">
+
               <li>
                 <NuxtLink v-if="$auth.loggedIn" to="/dashboard">
                   ড্যাশবোর্ড
+                </NuxtLink>
+              </li>
+                <li>
+                <NuxtLink v-if="$auth.loggedIn" to="/category">
+                  ক্যাটাগরি
                 </NuxtLink>
               </li>
               <li>
@@ -157,41 +171,29 @@
                     সকল পোস্ট 
                 </NuxtLink>
               </li>
+
+
               <li>
-                <NuxtLink v-if="$auth.loggedIn" to="/category">
-                  ক্যাটাগরি
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink v-if="$auth.loggedIn" to="/dashboard/mypost">
-                  আমার পোস্ট
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink v-if="$auth.loggedIn" to="/dashboard/mybid">
-                  আমার বিড
-                </NuxtLink>
-              </li>
-              <!-- <li>
                 <NuxtLink v-if="$auth.loggedIn" to="/dashboard/payment?type=subscription">
-                  পেমেন্ট </NuxtLink
-                >
-              </li> -->
-              <li>
-                <NuxtLink v-if="$auth.loggedIn" to="/dashboard/profile">
-                  প্রোফাইল</NuxtLink
+                  সাবস্ক্রিপশন  </NuxtLink
                 >
               </li>
+              <hr class="menu-border">
               <li>
                 <NuxtLink  to="/guideline">
                   গাইডলাইন </NuxtLink
                 >
               </li>
               <li>
+                <NuxtLink v-if="$auth.loggedIn" to="/dashboard/profile">
+                  প্রোফাইল</NuxtLink
+                >
+              </li>
+              <!-- <li>
                 <a @click.prevent="logout()" href="" v-if="$auth.loggedIn">
                   লগ আউট</a
                 >
-              </li>
+              </li> -->
               <li>
                 <div class="menu-close mt-30">
                   <i class="fas fa-times"></i>
@@ -328,7 +330,15 @@ export default {
 </script>
 
 <style scoped>
+.menu-border{
+  width: 80%;
+  margin: 20px auto;
+}
 
+.notification-icon a{
+      padding: 8px 12px 8px 12px;
+      font-size: 12px;
+}
 
 .b-sidebar > .b-sidebar-body::-webkit-scrollbar,
 .b-sidebar > .b-sidebar-body::-moz-scrollbar {
@@ -359,7 +369,7 @@ export default {
   transition: 1s ease all;
 }
 .header-main-menu img.main-logo{
-  width: 90px;
+  /* width: 90px; */
 }
 
 .header-main-menu.onScroll-header {

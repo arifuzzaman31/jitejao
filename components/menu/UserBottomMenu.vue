@@ -32,10 +32,9 @@
                   style="width: 48px"
                 />
 
-                <span
+                <!-- <span
                   class="mobile-notification-icon badge badge-light animation"
-                  >--</span
-                >
+                  ></span> -->
               </NuxtLink>
             </li>
 

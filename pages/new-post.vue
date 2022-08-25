@@ -44,7 +44,7 @@
                           alt="icon"
                         />
                       </div>
-                      <h4>বাছাই</h4>
+                      <h4>শর্টলিস্ট</h4>
                     </li>
                     <li>
                       <div class="img-icon">
@@ -54,7 +54,7 @@
                           alt="icon"
                         />
                       </div>
-                      <h4> বিজয়ী</h4>
+                      <h4> কনফার্ম </h4>
                     </li>
                   </ul>
                 </div>

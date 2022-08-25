@@ -4,7 +4,7 @@
       <ProfileMenu />
 
       <b-row class="mt-30-xs" v-if="!$fetchState.pending">
-        <div class="col-lg-4 col-sm-6 xs-mb15 mb-30">
+        <div class="col-lg-4 col-sm-6 xs-mb15 mb-15">
           <div class="dashboard-card-list card-gradient-blue p20 clearfix br-5">
             <div class="img-icon float-r">
               <img
@@ -14,17 +14,17 @@
               />
             </div>
             <div class="dashboard-card-content text-right">
-              <h1 class="title color-white" v-if="user.user_information">
+              <h2 class="title color-white" v-if="user.user_information">
                 {{ replaceNumbersE2B(postCount.totalPost) }}
-              </h1>
+              </h2>
               <NuxtLink to="/dashboard/mypost">
-                <span class="color-white">টোটাল পোস্ট </span>
+                <span class="color-white">আমার পোস্ট </span>
               </NuxtLink>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-sm-6 xs-mb15 mb-30" v-if="user.is_seller">
+        <div class="col-lg-4 col-sm-6 xs-mb15 mb-15" v-if="user.is_seller">
           <div class="dashboard-card-list card-gradient-red p20 clearfix br-5">
             <div class="img-icon float-r">
               <img
@@ -34,55 +34,37 @@
               />
             </div>
             <div class="dashboard-card-content text-right">
-              <h1 class="title color-white" v-if="user.user_information">
+              <h2 class="title color-white" v-if="user.user_information">
                 {{ replaceNumbersE2B(postCount.totalBid) }}
-              </h1>
+              </h2>
               <NuxtLink to="/dashboard/mybid">
-                <span class="color-white">টোটাল বিড</span>
+                <span class="color-white">আমার বিড</span>
               </NuxtLink>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-sm-6 xs-mb15 mb-30">
-          <div class="dashboard-card-list card-gradient-blue p20 clearfix br-5">
+        <div class="col-lg-4 col-sm-6 xs-mb15 mb-15">
+          <div class="dashboard-card-list card-gradient-purple p20 clearfix br-5">
             <div class="img-icon float-r">
               <img
-                src="~/assets/images/icon/amar-post-icon.svg"
+                src="~/assets/images/icon/payment-white.svg"
                 class="img-fluid float-l"
                 style="height: 72px"
               />
             </div>
             <div class="dashboard-card-content text-right">
-              <h1 class="title color-white" v-if="user">
-                {{ replaceNumbersE2B(last_seven_day.recent_post) }}
-              </h1>
+              <h2 class="title color-white" v-if="user">
+                 মেয়াদ : {{ user.subscription_expired_at_text }}
+              </h2>
               <NuxtLink to="/dashboard/mypost">
-                <span class="color-white">সর্বশেষ ৭ দিনে পোস্ট </span>
+                <span class="color-white">আমার সাবস্ক্রিপশন</span>
               </NuxtLink>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-sm-6 xs-mb15 mb-30" v-if="user.is_seller">
-          <div class="dashboard-card-list card-gradient-red p20 clearfix br-5">
-            <div class="img-icon float-r">
-              <img
-                src="~/assets/images/icon/amar-bid-icon.svg"
-                class="img-fluid float-l"
-                style="height: 72px"
-              />
-            </div>
-            <div class="dashboard-card-content text-right">
-              <h1 class="title color-white" v-if="user">
-                {{ replaceNumbersE2B(last_seven_day.recent_bid) }}
-              </h1>
-              <NuxtLink to="/dashboard/mybid">
-                <span class="color-white">সর্বশেষ ৭ দিনে বিড</span>
-              </NuxtLink>
-            </div>
-          </div>
-        </div>
+
         <!-- <div class="col-lg-4 col-sm-6 xs-mb15 mb-30" v-if="user.is_seller">
           <div
             class="dashboard-card-list card-gradient-purple p20 clearfix br-5"
@@ -104,7 +86,7 @@
             </div>
           </div>
         </div> -->
-        
+<!--         
         <div class="col-lg-4 col-sm-6 xs-mb15 mb-30" v-if="user.is_seller">
           <div
             class="dashboard-card-list card-gradient-purple p20 clearfix br-5"
@@ -153,9 +135,9 @@
                 সেলার স্ট্যাটাস <i class="fas fa-question-circle"></i></span>
             </div>
           </div>
-        </div>
+        </div> -->
         
-        <div class="col-lg-4 col-sm-6 xs-mb15 mb-30">
+        <!-- <div class="col-lg-4 col-sm-6 xs-mb15 mb-30">
           <div
             class="dashboard-card-list card-gradient-purple p20 clearfix br-5"
           >
@@ -206,7 +188,7 @@
              
             </div>
           </div>
-        </div>
+        </div> -->
 
            <!-- <div class="col-lg-4 col-sm-6 xs-mb15 mb-30" v-if="user.is_seller">
           <div

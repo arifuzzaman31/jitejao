@@ -226,11 +226,11 @@
                 <span class="color-purple p-2 ml-2 bg-purple-op-20 br-5 pl-10 pr-10">
                    <i class="far fa-bookmark pr-5"></i> প্রাথমিক বাছাইকৃত
                 </span></p>
-            <p v-else>শুধুমাত্র ডিমান্ডকারী বিড সংক্ৰান্ত তথ্য দেখতে পারবে</p>
+            <p v-else>শুধুমাত্র ডিমান্ড পোস্টকারী বিড সংক্ৰান্ত তথ্য দেখতে পারবে</p>
           </div>
         </div>
         <div v-else>
-          <p>শুধুমাত্র ডিমান্ডকারী বিড সংক্ৰান্ত তথ্য দেখতে পারবে</p>
+          <p>শুধুমাত্র ডিমান্ড পোস্টকারী বিড সংক্ৰান্ত তথ্য দেখতে পারবে</p>
            <span class="color-purple p-2 ml-2 bg-purple-op-20 br-5 pl-10 pr-10" v-if="bid.is_shortlisted">   <i class="far fa-bookmark pr-5"></i> প্রাথমিক বাছাইকৃত</span>
         </div>
       </div>

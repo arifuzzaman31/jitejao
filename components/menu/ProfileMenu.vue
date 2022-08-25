@@ -110,7 +110,8 @@ nav.bashboard-top-menu ul li {
   text-align: center;
   transition: 1s ease all;
   cursor: pointer;
-  padding: 10px 23.6px;
+      padding: 6px;
+    width: 20%;
   /* border-left: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd; */

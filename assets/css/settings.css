@@ -291,6 +291,9 @@ h1,h2,h3,h3,h4,h6{
   .float-r{
       float: right !important;
   }
+  .text-right{
+    text-align: right;
+  }
   .w-0{
     width: 0;
   }
@@ -2097,6 +2100,10 @@ hr{
 }
 .allbid-winner-image{
   margin-top: 0px !important;
+}
+.hero-vedio-popup h2{
+  font-size: 15px !important;
+  margin-top: 11px !important;
 }
 
 }

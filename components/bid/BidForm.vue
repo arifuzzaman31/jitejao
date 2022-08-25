@@ -47,7 +47,7 @@
              
             <input
               type="text"
-              placeholder="অফার এমাউন্ট"
+              placeholder="অফার এমাউন্ট (ইংরেজিতে লিখুন )"
               name=""
               v-model="bid_form.offer_amount"
               class="form-control input-form"

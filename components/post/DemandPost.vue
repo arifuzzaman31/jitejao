@@ -418,32 +418,35 @@ export default {
 
   methods: {
 
-    resizeImage(base64Str) {
-      console.log(base64Str)
-      var img = new Image();
-      img.src = base64Str;
-      var canvas = document.createElement('canvas');
-      var MAX_WIDTH = 400;
-      var MAX_HEIGHT = 350;
-      var width = img.width;
-      var height = img.height;
+    resizeImage(base64Str,maxWidth = 400, maxHeight = 350) {
+      return new Promise((resolve) => {
+        let img = new Image()
+        img.src = base64Str
+        img.onload = () => {
+          let canvas = document.createElement('canvas')
+          const MAX_WIDTH = maxWidth
+          const MAX_HEIGHT = maxHeight
+          let width = img.width
+          let height = img.height
 
-      if (width > height) {
-        if (width > MAX_WIDTH) {
-          height *= MAX_WIDTH / width;
-          width = MAX_WIDTH;
+          if (width > height) {
+            if (width > MAX_WIDTH) {
+              height *= MAX_WIDTH / width
+              width = MAX_WIDTH
+            }
+          } else {
+            if (height > MAX_HEIGHT) {
+              width *= MAX_HEIGHT / height
+              height = MAX_HEIGHT
+            }
+          }
+          canvas.width = width
+          canvas.height = height
+          let ctx = canvas.getContext('2d')
+          ctx.drawImage(img, 0, 0, width, height)
+          resolve(canvas.toDataURL())
         }
-      } else {
-        if (height > MAX_HEIGHT) {
-          width *= MAX_HEIGHT / height;
-          height = MAX_HEIGHT;
-        }
-      }
-      canvas.width = width;
-      canvas.height = height;
-      var ctx = canvas.getContext('2d');
-      ctx.drawImage(img, 0, 0, width, height);
-      return canvas.toDataURL();
+      })
     },
     // upload image
     uploadImageOne(e) {
@@ -452,10 +455,10 @@ export default {
       let file = files[0];
       let reader = new FileReader();
       reader.onload = (e) => {
-        const resImage = this.resizeImage(e.target.result)
-        // this.form.image_one = e.target.result;
-        this.form.image_one = resImage;
-        this.upLoadImageOneServer();
+        this.resizeImage(e.target.result, 400, 350).then((result) => {
+            this.form.image_one = result;
+            this.upLoadImageOneServer();
+        });
       };
       reader.readAsDataURL(file);
     },
@@ -465,10 +468,10 @@ export default {
       let file = files[0];
       let reader = new FileReader();
       reader.onload = (e) => {
-        // this.form.image_two = e.target.result;
-        const resImage = this.resizeImage(e.target.result)
-        this.form.image_two = resImage;
-        this.upLoadImageTwoServer();
+        this.resizeImage(e.target.result, 400, 350).then((result) => {
+            this.form.image_two = result;
+            this.upLoadImageTwoServer();
+        });
       };
       reader.readAsDataURL(file);
     },
@@ -478,10 +481,10 @@ export default {
       let file = files[0];
       let reader = new FileReader();
       reader.onload = (e) => {
-        // this.form.image_three = e.target.result;
-        const resImage = this.resizeImage(e.target.result)
-        this.form.image_three = resImage;
-        this.upLoadImageThreeServer();
+        this.resizeImage(e.target.result, 400, 350).then((result) => {
+            this.form.image_three = result;
+            this.upLoadImageThreeServer();
+        });
       };
       reader.readAsDataURL(file);
     },

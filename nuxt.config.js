@@ -95,8 +95,8 @@ export default {
     // pusherKey: process.env.PUSHER_APP_KEY || 'b0db16ecc014f88e6a27',
     // pusherSecret: process.env.PUSHER_APP_SECRET || '3ee3185298ddaa91d6f7',
     // pusherCluster: process.env.PUSHER_APP_CLUSTER || 'ap3',
-    baseUrl: process.env.APP_URL || 'https://192.168.0.113:3000',
-    metaUrl: process.env.META_IMAGE_URL || 'https://bidoapi.limmexbd.com/public/images/seo/meta.jpeg',
+    baseUrl: process.env.APP_URL || 'http://jitejao.com',
+    metaUrl: process.env.META_IMAGE_URL || 'https://bidoapi.bangladeshclubgeneva.ch/public/images/seo/meta.jpeg',
   },
 
   // publicRuntimeConfig: {

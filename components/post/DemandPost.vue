@@ -455,7 +455,7 @@ export default {
       let file = files[0];
       let reader = new FileReader();
       reader.onload = (e) => {
-        this.resizeImage(e.target.result, 400, 350).then((result) => {
+        this.resizeImage(e.target.result, 650, 570).then((result) => {
             this.form.image_one = result;
             this.upLoadImageOneServer();
         });
@@ -468,7 +468,7 @@ export default {
       let file = files[0];
       let reader = new FileReader();
       reader.onload = (e) => {
-        this.resizeImage(e.target.result, 400, 350).then((result) => {
+        this.resizeImage(e.target.result, 650, 570).then((result) => {
             this.form.image_two = result;
             this.upLoadImageTwoServer();
         });
@@ -481,7 +481,7 @@ export default {
       let file = files[0];
       let reader = new FileReader();
       reader.onload = (e) => {
-        this.resizeImage(e.target.result, 400, 350).then((result) => {
+        this.resizeImage(e.target.result, 650, 570).then((result) => {
             this.form.image_three = result;
             this.upLoadImageThreeServer();
         });

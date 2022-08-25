@@ -387,7 +387,7 @@ export default {
           if (response.status === "success") {
             this.$auth.setUserToken(response.token);
             this.$auth.setUser(response.user);
-            this.$router.push("/dashboard");
+            this.$router.push("/");
           }
         })
         .catch((error) => {

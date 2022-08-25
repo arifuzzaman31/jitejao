@@ -63,7 +63,7 @@
                   <p>{{ user.mobile_no }}</p>
                 </td>
               </tr>
-              <tr v-if="user.is_seller == 1">
+              <!-- <tr v-if="user.is_seller == 1">
                 <td scope="row">
                   <h4>ক্যাটেগরিঃ</h4>
                 </td>
@@ -91,7 +91,7 @@
                     >
                   </div>
                 </td>
-              </tr>
+              </tr> -->
               <tr>
                 <td scope="row ">
                   <h4>আপনার সম্পর্কেঃ</h4>

@@ -106,7 +106,7 @@
                 </b-form-checkbox>
               </div> -->
 
-             <div class="from-group mb-15" v-if="form.is_seller">
+             <!-- <div class="from-group mb-15" v-if="form.is_seller">
                  <label class="font-600">ক্যাটেগরি নির্বাচন করুন <span class="text-danger">*</span></label>
                  <multiselect
                   v-model="form.category"
@@ -120,7 +120,7 @@
                 <div class="text-danger mt-5" v-if="$v.form.category.$error">
                     সর্বনিম্ন একটি ক্যাটাগরি হলেও সিলেক্ট করুন 
                   </div>
-             </div>
+             </div> -->
 
              <div class="profile-btn md-15">
                <!-- <a href="#" class="btn button-small primary-button bid-button ">এডিট  করুন </a> -->
@@ -228,11 +228,11 @@ export default {
     form: {
       name: { required },
       area: { required },
-      category: {
-        required: requiredIf(function () {
-          return this.form.is_seller;
-        }),
-      },
+      // category: {
+      //   required: requiredIf(function () {
+      //     return this.form.is_seller;
+      //   }),
+      // },
     },
   },
 
@@ -244,14 +244,14 @@ export default {
     this.view_avatar = response.data.avatar;
     this.form.description = response.data.user_information.bio;
     this.form.address = response.data.user_information.address;
-    this.form.category = response.data.category;
+    // this.form.category = response.data.category;
     this.form.area = response.data.area;
     this.form.is_seller = response.data.is_seller;
     this.form.is_seller_before = response.data.is_seller_before;
   },
 
   mounted() {
-    this.getCategoryList();
+    // this.getCategoryList();
     this.getAreaList();
   },
 
@@ -298,17 +298,17 @@ export default {
       reader.readAsDataURL(file);
     },
 
-    getCategoryList() {
-      this.$axios
-        .$get("category-list?no_pagination=yes&status=1")
-        .then((response) => {
-          this.categories = response.data;
-        });
-    },
+    // getCategoryList() {
+    //   this.$axios
+    //     .$get("category-list?no_pagination=yes&status=1")
+    //     .then((response) => {
+    //       this.categories = response.data;
+    //     });
+    // },
 
-    customCategoryLabel({ name, english_name }) {
-      return `${name} — (${english_name})`;
-    },
+    // customCategoryLabel({ name, english_name }) {
+    //   return `${name} — (${english_name})`;
+    // },
 
     customAreaLabel(name) {
       return `${name.area_name}`;

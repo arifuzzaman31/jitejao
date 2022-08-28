@@ -174,7 +174,7 @@
                   <i class="far fa-bookmark pr-5"></i> শর্টলিস্টেড 
                 </p>
            <div  v-if="demanderId == $auth.user.id">
-              <a
+              <a v-show="!bid.is_shortlisted"
                 href=""
                 class="button ml-10 button-small"
                 :class="

@@ -85,7 +85,7 @@
           <div class="cate-details-right">
 
                                   <!-- buyer profile start -->
-            <div class="buyer-profile-short bg-blue-gray clearfix mb-20 p10 mt-30-xs br-5 ">
+            <div class="buyer-profile-short bg-blue-gray clearfix mb-10 p10 mt-30-xs br-5 ">
               <div class="">
 
                 <!--<NuxtLink :to="`/user-profile/${demand.user.id}?view_as=buyer`">-->
@@ -152,7 +152,7 @@
             </div>
             <!--item-->
             <div class="title mt-15">
-              <h3>{{ demand.title }}</h3>
+              <h4>{{ demand.title }}</h4>
             </div>
             <!-- title -->
 

@@ -110,7 +110,7 @@
             <a v-if="demand.win_bid && !demand.win_bid.bid_rating" 
                 href="javascript:void(0)"
                 class="bg-yellow color-white edit-delete-manage  float-r mr-5" 
-                @click.prevent="markAsDone(demand.win_bid)">রেটিং <i class="fas fa-star fa-xs pr-5"></i> </a>
+                @click.prevent="markAsDone(demand.win_bid)">রেটিং দিন  <i class="fas fa-star fa-xs pr-5"></i> </a>
              </div>
            
             <div

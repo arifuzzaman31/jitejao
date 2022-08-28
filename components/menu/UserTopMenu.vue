@@ -156,11 +156,11 @@
               </li>
               <hr class="menu-border" v-if="$auth.loggedIn">
 
-              <li>
+              <!-- <li>
                 <NuxtLink v-if="$auth.loggedIn" to="/dashboard">
                   ড্যাশবোর্ড
                 </NuxtLink>
-              </li>
+              </li> -->
                 <li>
                 <NuxtLink v-if="$auth.loggedIn" to="/category">
                   ক্যাটাগরি

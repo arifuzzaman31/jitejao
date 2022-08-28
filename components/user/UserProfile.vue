@@ -113,7 +113,7 @@
             </NuxtLink>
                         <NuxtLink
               to=""
-              class="btn button-small gradient-purple-secondary color-white bid-button ml-5"
+              class="btn button-small gradient-purple-secondary color-white bid-button ml-5 mt-xs-15 w-xs-100 ml-xs-0"
             >
               লগ আউট
             </NuxtLink>

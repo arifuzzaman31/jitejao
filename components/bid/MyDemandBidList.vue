@@ -77,7 +77,7 @@
               </p> -->
               <div class="date " v-if="bid.bid_rating != null">
                 <p class="date">
-                  <span class="float-l mr-10" style="line-height: 1.1;"> আমাকে দেওয়া রেটিং: </span>
+                  <span class="float-l mr-10"> আমাকে দেওয়া রেটিং: </span>
                   <StarsRatings
                     v-model="bid.bid_rating.ratings"
                     :star-size="12"
@@ -85,7 +85,7 @@
                     :increment="0.5"
                     :ssr="false"
                     read-only
-                   style="margin-top:-10px;"
+                   style="margin-top:-2px;"
                   />
                 </p>
               </div>
@@ -106,7 +106,7 @@
           <div class="my-demand-post-btn p10 pl-10 pr-10  bg-blue-op-20">
             <div class="my-demand-post-status">
               <!-- <span class=" bg-green-op-10 color-green post-status">Progress</span> -->
-              <span class="color-white post-status" :class="bid.state_of_bid"
+              <span class=" post-status" :class="bid.state_of_bid"
                 >{{ makebidState(bid.state_of_bid) }}</span>
             </div>
             <div class="my-demand-post-manage-btn">
@@ -572,7 +572,7 @@ export default {
           state_name = 'কমপ্লিট';
           break;
         case 'shortlisted':
-          state_name = 'প্রাথমিক বাছাই';
+          state_name = 'শর্টলিস্ট';
           break;
         default: 
           state_name = 'পেন্ডিং';

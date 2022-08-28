@@ -9,7 +9,7 @@
                 src="~/assets/images/icon/menu-dashboard.svg"
                 class="img-fluid"
               />
-              ড্যাশবোর্ড
+              প্রোফাইল
             </NuxtLink>
           </li>
 

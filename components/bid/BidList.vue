@@ -18,14 +18,14 @@
             :class="current_tab == 2 ? 'active_button' : ''"
             @click="setCurrentTab(2)"
           >
-            প্রাথমিক বাছাই ({{ shbid_counter }})
+            শর্টলিস্ট  ({{ shbid_counter }})
           </button>
           <button
             class="button button-sm color-black br-0"
             :class="current_tab == 3 ? 'active_button' : ''"
             @click="setCurrentTab(3)"
           >
-            বিজয়ী ({{ winner_counter }})
+            কনফার্ম  ({{ winner_counter }})
           </button>
 
            <button
@@ -100,7 +100,7 @@
          <!-- end of guideline -->
 
          <div class="mb-30">
-           <h5>   প্রাথমিক বাছাই </h5>
+           <h5>  শর্টলিস্ট </h5>
            <div class="content">
              <ul>
                <li><i class="fas fa-check mr-15 color-purple"></i> 

@@ -25,7 +25,7 @@
                 
                  >
                   <div class="hero-vedio-popup-image  ">
-                    <img  src="~/assets/images/icon/bido-icon-mobile.svg" alt="Demand" width="28" />
+                    <!-- <img  src="~/assets/images/icon/bido-icon-mobile.svg" alt="Demand" width="28" /> -->
                   </div>
                   <div class="content">
                     <a href="#"><h2>ডিমান্ড পোস্ট ও বিড কিভাবে করবেন ? </h2></a>
@@ -116,22 +116,21 @@ export default {
 }
 
 .hero-vedio-popup .hero-vedio-popup-image {
-    width: 40px;
+    /* width: 40px; */
     height: 40px;
-    line-height: 40px;
+    /* line-height: 40px;
     border-radius: 50px;
     float: left;
     margin-right: 10px;
     /* background-color: #fff; */
-    text-align: center;
+    /* text-align: center;  */
 }
 .hero-vedio-popup h2{
-  text-align: left;
-  line-height: 1.4;
-  font-weight: normal;
-  font-size: 20px;
-  margin-top: 8px;
-  text-decoration: underline;
+    text-align: left;
+    line-height: 3.4;
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: underline;
 
 }
 .hero-vedio-popup-image.bg-purple {

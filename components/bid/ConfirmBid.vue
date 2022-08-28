@@ -176,7 +176,7 @@
     <NotFound v-if="!$fetchState.pending && !confirmBid">
       <template v-slot:head-title> এখনো কোন বিড কনফার্ম করেননি </template>
       <template v-slot:subhead-title>
-        বিড কনফার্ম করার জন্যে বিডলিস্ট থেকে বিডকারির সাথে যোগাযোগ করে কনফার্ম
+        বিড কনফার্ম করার জন্যে বিডলিস্ট থেকে বিডারের  সাথে যোগাযোগ করে কনফার্ম
         আইকন <i class="far fa-check-circle color-green"></i> এ ক্লিক করে কনফার্ম করুন
       </template>
     </NotFound>

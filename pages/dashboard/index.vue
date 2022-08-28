@@ -14,9 +14,9 @@
               />
             </div>
             <div class="dashboard-card-content text-right">
-              <h2 class="title color-white" v-if="user.user_information">
+              <h3 class="title color-white" v-if="user.user_information">
                 {{ replaceNumbersE2B(postCount.totalPost) }}
-              </h2>
+              </h3>
               <NuxtLink to="/dashboard/mypost">
                 <span class="color-white">আমার পোস্ট </span>
               </NuxtLink>
@@ -34,9 +34,9 @@
               />
             </div>
             <div class="dashboard-card-content text-right">
-              <h2 class="title color-white" v-if="user.user_information">
+              <h3 class="title color-white" v-if="user.user_information">
                 {{ replaceNumbersE2B(postCount.totalBid) }}
-              </h2>
+              </h3>
               <NuxtLink to="/dashboard/mybid">
                 <span class="color-white">আমার বিড</span>
               </NuxtLink>
@@ -54,9 +54,9 @@
               />
             </div>
             <div class="dashboard-card-content text-right">
-              <h2 class="title color-white" v-if="user">
+              <h3 class="title color-white" v-if="user">
                  মেয়াদ : {{ user.subscription_expired_at_text }}
-              </h2>
+              </h3>
               <NuxtLink to="/dashboard/mypost">
                 <span class="color-white">আমার সাবস্ক্রিপশন</span>
               </NuxtLink>

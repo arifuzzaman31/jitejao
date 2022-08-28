@@ -1,10 +1,10 @@
 <template>
   <div class="row">
     <NotFound v-if="!$fetchState.pending && wincounter <= 0 && bids.data && bids.data.length <= 0">
-      <template v-slot:head-title> কোন প্রাথমিক বাছাই বিড পাওয়া যায়নি </template>
+      <template v-slot:head-title> কোন শর্টলিস্ট  বিড পাওয়া যায়নি </template>
       <template v-slot:subhead-title>
-        প্রাথমিক বাছাই করার আইকন <i class="far fa-bookmark"></i> এ ক্লিক করে বিড
-        লিস্ট থেকে পছন্দ অনুযায়ী বিড প্রাথমিক বাছাই করুন
+        শর্টলিস্ট  করার আইকন <i class="far fa-bookmark"></i> এ ক্লিক করে বিড
+        লিস্ট থেকে পছন্দ অনুযায়ী বিড শর্টলিস্ট করুন
       </template>
     </NotFound>
     <NotFound v-if="bids.data && bids.data.length <= 0 && wincounter > 0">
@@ -132,7 +132,7 @@
               href=""
               class="button button-sm color-red bg-red-op-20"
               v-b-tooltip.hover
-              title="এই বিডটি  প্রাথমিক বাছাই থেকে রিমোভ করুন"
+              title="এই বিডটি  শর্টলিস্ট  থেকে রিমোভ করুন"
               @click.prevent="removeShortlisted(bid.id)"
               >অনির্বাচিত করুন <i class="far fa-bookmark"></i
             ></a> -->
@@ -155,7 +155,7 @@
               class="button button-sm color-green bg-green-op-10 ml-5 mt-xs-15"
               @click.prevent="getContact(bid.id,'winner')"
               ><i class="far fa-check-circle pr-5"></i
-            >বিজয়ী </a>
+            >কনফার্ম  </a>
           </div>
         </div>
         <!-- <div v-else>

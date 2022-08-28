@@ -3,7 +3,7 @@
     id="winnerUserModal"
     size="lg"
     centered
-    title="এই বিডটি বিজয় করুন"
+    title="এই বিডটি কনফার্ম  করুন"
     hide-footer
   >
     <b-row v-if="bidUser && bidUser.user">
@@ -54,13 +54,13 @@ export default {
   methods: {
     confrimBid(bid_id) {
       Swal.fire({
-        title: "আপনি কি নিচ্ছিত?",
+        title: "আপনি কি নিশ্চিত?",
         text: "আপনি এই বিড টি কনফার্ম করছেন!",
         icon: "warning",
         showCancelButton: true,
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
-        confirmButtonText: "হ্যাঁ নিচ্ছিত!",
+        confirmButtonText: "হ্যাঁ নিশ্চিত!",
         cancelButtonText: "না !",
       }).then((result) => {
         if (result.value) {

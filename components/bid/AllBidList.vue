@@ -32,7 +32,7 @@
         <!-- <span
           v-if="demanderId && $auth.loggedIn && demanderId == $auth.user.id"
         >
-          বিড পাওয়া গেলে বিড লিস্ট থেকে প্রাথমিক বাছাই <i class="fas fa-mobile-alt color-blue"></i>
+          বিড পাওয়া গেলে বিড লিস্ট থেকে শর্টলিস্ট  <i class="fas fa-mobile-alt color-blue"></i>
            এবং বিজয়ী করুন <i class="far fa-check-circle color-green"></i>
         </span> -->
         <span v-if="demanderId && $auth.loggedIn && demanderId !== $auth.user.id">প্রথম বিডার হিসেবে প্রাধান্য পেতে এখনি বিড করুন</span>
@@ -171,7 +171,7 @@
                 <i class="fas fa-list"></i> বিস্তারিত 
               </button>
               <p class="color-purple p-2 ml-2 bg-purple-op-20 br-5 pl-10 pr-10" v-if="bid.user_id == $auth.user.id && bid.is_shortlisted && !bid.is_confirmed">
-                  <i class="far fa-bookmark pr-5"></i> প্রাথমিক বাছাইকৃত
+                  <i class="far fa-bookmark pr-5"></i> শর্টলিস্টেড 
                 </p>
            <div  v-if="demanderId == $auth.user.id">
               <a
@@ -185,12 +185,12 @@
                 v-b-tooltip.hover
                 :title="
                   bid.is_shortlisted
-                    ? 'এই বিডটি  প্রাথমিক বাছাই থেকে রিমোভ করুন'
-                    : 'এই বিডটি  প্রাথমিক বাছাই করুন'
+                    ? 'এই বিডটি  শর্টলিস্ট  থেকে রিমোভ করুন'
+                    : 'এই বিডটি  শর্টলিস্ট  করুন'
                 "
                 @click.prevent="addToShortList(bid)"
                 ><i class="far fa-bookmark pr-5"></i
-              > বাছাই করুন</a>
+              > শর্টলিস্ট করুন</a>
               <!-- <a
                 href=""
                 class="button button-sm color-blue bg-blue-op-10"
@@ -224,14 +224,14 @@
           <div v-else>
             <p v-if="bid.is_shortlisted && !bid.is_confirmed">
                 <span class="color-purple p-2 ml-2 bg-purple-op-20 br-5 pl-10 pr-10">
-                   <i class="far fa-bookmark pr-5"></i> প্রাথমিক বাছাইকৃত
+                   <i class="far fa-bookmark pr-5"></i> শর্টলিস্টেড
                 </span></p>
             <p v-else>শুধুমাত্র ডিমান্ড পোস্টকারী বিড সংক্ৰান্ত তথ্য দেখতে পারবে</p>
           </div>
         </div>
-        <div v-else>
-          <p>শুধুমাত্র ডিমান্ড পোস্টকারী বিড সংক্ৰান্ত তথ্য দেখতে পারবে</p>
-           <span class="color-purple p-2 ml-2 bg-purple-op-20 br-5 pl-10 pr-10" v-if="bid.is_shortlisted">   <i class="far fa-bookmark pr-5"></i> প্রাথমিক বাছাইকৃত</span>
+        <div v-else class="text-center">
+          <p>শুধুমাত্র ডিমান্ড পোস্টকারী বিড <br> সংক্ৰান্ত তথ্য দেখতে পারবে</p>
+           <span class="color-purple p-2 ml-2 bg-purple-op-20 br-5 pl-10 pr-10 " v-if="bid.is_shortlisted">   <i class="far fa-bookmark pr-5"></i> শর্টলিস্টেড</span>
         </div>
       </div>
     </div>

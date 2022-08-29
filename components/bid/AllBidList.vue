@@ -185,8 +185,8 @@
                 v-b-tooltip.hover
                 :title="
                   bid.is_shortlisted
-                    ? 'এই বিডটি  শর্টলিস্ট  থেকে রিমোভ করুন'
-                    : 'এই বিডটি  শর্টলিস্ট  করুন'
+                    ? 'এই বিডটি শর্টলিস্ট থেকে রিমোভ করুন'
+                    : 'এই বিডটি শর্টলিস্ট করুন'
                 "
                 @click.prevent="addToShortList(bid)"
                 ><i class="far fa-bookmark pr-5"></i

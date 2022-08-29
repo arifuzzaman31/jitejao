@@ -28,7 +28,7 @@
                     <!-- <img  src="~/assets/images/icon/bido-icon-mobile.svg" alt="Demand" width="28" /> -->
                   </div>
                   <div class="content">
-                    <a href="#"><h2>ডিমান্ড পোস্ট ও বিড কিভাবে করবেন ? </h2></a>
+                    <NuxtLink to="/guideline"><h2>ডিমান্ড পোস্ট ও বিড কিভাবে করবেন ?</h2></NuxtLink>
                         <!-- <b-modal
                           id="h-video-modal1"
                           centered

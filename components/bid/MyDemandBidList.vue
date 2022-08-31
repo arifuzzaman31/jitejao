@@ -574,6 +574,9 @@ export default {
         case 'shortlisted':
           state_name = 'শর্টলিস্ট';
           break;
+        case 'completed':
+          state_name = 'কমপ্লিট';
+          break;
         default: 
           state_name = 'পেন্ডিং';
       }
@@ -675,16 +678,12 @@ export default {
 /* body {
   background-color: #f2f3f9;
 } */
-.done {
+.done .confirmed .completed{
   background-color:rgb(76, 175, 80);
 }
 
 .shortlisted {
   background-color:rgba(0, 98, 255, 0.80);
-}
-
-.confirmed {
-  background-color:rgb(76, 175, 80);
 }
 
 .abroad {

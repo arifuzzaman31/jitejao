@@ -97,7 +97,7 @@
           <div class="my-demand-post-btn p10 pl-10 pr-10 bg-blue-op-20">
             <div class="my-demand-post-status">
               <span
-                v-if="demand.is_done"
+                v-if="demand.bid_status"
                 class="color-white post-status bg-green"
                 >কমপ্লিট </span
               >

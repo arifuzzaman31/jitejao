@@ -111,12 +111,12 @@
             >
               এডিট করুন
             </NuxtLink>
-                        <NuxtLink
-              to=""
+                        <a
+              href="" @click.prevent="logout()" v-if="$auth.loggedIn"
               class="btn button-small gradient-purple-secondary color-white bid-button ml-5 mt-xs-15 w-xs-100 ml-xs-0"
             >
               লগ আউট
-            </NuxtLink>
+          </a>
           </div>
         </div>
       </div>
@@ -140,5 +140,12 @@ export default {
       .$get("user/profile")
       .then((response) => (this.user = response.data));
   },
+
+  methods: {
+    async logout() {
+      await this.$auth.logout();
+      this.$router.push("/login");
+    },
+  }
 };
 </script>

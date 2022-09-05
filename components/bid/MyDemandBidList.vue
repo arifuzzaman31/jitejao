@@ -106,9 +106,9 @@
           <div class="my-demand-post-btn p10 pl-10 pr-10  bg-blue-op-20">
             <div class="my-demand-post-status">
               <!-- <span class=" bg-green-op-10 color-green post-status">Progress</span> -->
-              <span class="post-status bg-green" v-if="bid.demand.bid_status && !bid.is_confirmed"
+              <span class="post-status color-white bg-green" v-if="bid.demand.bid_status && !bid.is_confirmed"
                 >কমপ্লিট</span>
-              <span v-else class="post-status" :class="bid.state_of_bid"
+              <span v-else class="post-status color-white" :class="bid.state_of_bid"
                 >{{ makebidState(bid.state_of_bid) }}</span>
             </div>
             <div class="my-demand-post-manage-btn">
@@ -697,6 +697,9 @@ export default {
 }
 
 .abroad {
+  background-color:rgba(37,44,83,.35);
+}
+.pending {
   background-color:rgba(37,44,83,.35);
 }
 

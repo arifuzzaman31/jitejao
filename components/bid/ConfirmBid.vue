@@ -92,10 +92,10 @@
             </h2>
               <div class="bid-action " style="display: inline-block;">
                     <button  @click.prevent="showDetails(confirmBid)" type="button" class="button button-small bg-purple bid-button  color-white">
-                      <i class="fas fa-list pr-5"></i>  বিস্তারিত 
+                      <i class="fas fa-list pr-5"></i> বিস্তারিত 
                     </button>
-                    <button   @click.prevent="showRatingDetails(confirmBid)"  type="button" class="button button-small bg-yellow-op-20 bid-button  color-yellow">
-                      <i class="fas fa-star pr-5"></i>  রেটিং 
+                    <button v-show="!confirmBid.is_buyer_reviewed"  @click.prevent="showRatingDetails(confirmBid)"  type="button" class="button button-small bg-yellow-op-20 bid-button  color-yellow">
+                      <i class="fas fa-star pr-5"></i> রেটিং দিন 
                     </button>
               </div>
           </div>

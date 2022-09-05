@@ -141,7 +141,7 @@
 
 <script>
 import { validationMixin } from "vuelidate";
-const { required, requiredIf, minLength } = require("vuelidate/lib/validators");
+const { required, minLength } = require("vuelidate/lib/validators");
 const phoneNumber = (value) => {
   return /(01)[0-9]{9}/.test(value);
 };
@@ -219,12 +219,14 @@ export default {
         let response = await this.$auth.loginWith("local", {
           data: this.form,
         });
-        // .then((res) => {
-        //     this.$route.push({
-        //         path: "/dashboard"
-        //     });
-        // });
-        // console.log(response)
+        response.then((res) => {
+            this.$router.push("/");
+            // this.$route.push({
+            //     path: "/"
+            // });
+            console.log(res)
+          });
+          console.log(response)
       } catch (error) {
         if (error.response.status == 422) {
           this.sending_otp = false;

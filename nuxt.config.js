@@ -66,9 +66,12 @@ export default {
     redirect: {
       login: '/login',
       logout: '/',
-      callback: '/login',
-      home: '/'
+      // callback: '/login',
+      home: '/',
+      callback: '/'
     },
+    watchLoggedIn: true,
+    rewriteRedirects: true,
     strategies: {
       local: {
         token: {

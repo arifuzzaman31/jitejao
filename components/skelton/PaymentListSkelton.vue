@@ -4,6 +4,7 @@
       <td class="text-center"><b-skeleton></b-skeleton></td>
       <td class="text-center"><b-skeleton></b-skeleton></td>
       <td class="text-center"><b-skeleton></b-skeleton></td>
+      <td class="text-center"><b-skeleton></b-skeleton></td>
       <td class="text-center">
         <b-skeleton class="text-center" width="80%" type="button"></b-skeleton>
       </td>

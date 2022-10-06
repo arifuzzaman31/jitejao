@@ -3,7 +3,7 @@
     <b-container>
       <b-row>
         <div class="dashboard-title text-center mb-70 mt-30">
-          <h2 class="mb-10">টার্মস ও কন্ডিশন</h2>
+          <h2 class="mb-10"> গাইডলাইন</h2>
           <!-- <p>নিছে বর্ণিত নিয়মাবলী পড়ুন ।</p> -->
         </div>
       </b-row>

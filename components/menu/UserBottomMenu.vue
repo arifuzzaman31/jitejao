@@ -4,8 +4,9 @@
       <div class="mobile-bottom-menu d-block d-sm-none">
         <div class="clearfix">
           <ul>
+
             <li>
-              <NuxtLink to="/post">
+              <NuxtLink to="/post?from=searchbar">
                 <img
                   src="~/assets/images/icon/add-search-mobile.svg"
                   class="img-fluid mobile-icon"
@@ -136,3 +137,14 @@
   }
 }
 </style>
+
+<script>
+  export default {
+    data() {
+      return {
+        
+      }
+    }
+  }
+
+      </script>

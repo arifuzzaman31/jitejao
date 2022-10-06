@@ -32,7 +32,8 @@
           <div class="float-r">
             <div class="main-menu">
               <div class="display-fl">
-                <NuxtLink to="/new-post" title="New Post">
+                <div class="d-none d-sm-block">
+                <NuxtLink to="/new-post " title="New Post">
                 <span class="notification-icon">
                    <a href="#" class="button button-small gradient-purple-secondary color-white bid-button" style="margin-left:-15px">পোস্ট করুন</a>
                 </span>
@@ -42,6 +43,7 @@
                     সার্চ করুন
                   </span>
                 </NuxtLink> -->
+              </div>
                 <span class=" notification-icon position-relative"  v-b-toggle.sidebar-backdrop
                   >
                    <img

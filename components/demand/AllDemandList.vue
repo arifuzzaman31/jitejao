@@ -70,13 +70,14 @@
       </div>
     </b-row>
     <!-- dasktop device -->
-    <div class="d-block d-sm-none float-left" v-on:click="isHide = !isHide">
-      <a href="#"><i class="fas fa-filter"></i></a>
-    </div>
+
 
     <b-row>
+      <div class="d-block d-sm-none float-right mt-10 w-100 mr-15 text-right" v-on:click="isHide = !isHide">
+      <a href="#"><i class="fas fa-filter"></i></a>
+      </div>
       <div class="col-md-12 " v-if="!isHide">
-        <div class="category-form mt-30  clearfix bg-gray-op-50">
+        <div class="category-form mt-5  clearfix bg-gray-op-50">
           <!-- <a
             href=""
             class="btn btn-danger mb-2 mt-2"
@@ -142,7 +143,7 @@
         </div>
       </div>
     </b-row>
-    <!-- dasktop device -->
+    <!-- mobile device -->
 
   
 
@@ -232,6 +233,7 @@ export default {
 
     this.setDemandList(response);
     
+    
   },
 
   watch: {
@@ -239,8 +241,9 @@ export default {
       this.$fetch();
     },
   },
-
+  
   created() {
+    this.isHide = this.$route.query.from == 'searchbar' ? false : true;
     this.getAreaList();
     this.getCategoryList();
     

@@ -76,7 +76,7 @@
             <div class="details  pt-10">
               <p>
                 
-       ৭. কাষ্টমার এবং সেলারের মধ্যে ডিল ফাইনাল হলে অবশ্যই লিখিত চুক্তির মাধ্যমে লেনদেন করবে। এক্ষেত্রে <a href="jitejao.com">jitejao.com</a> এর সরাসরি হেল্প নিতে পারে। 
+       ৭. কাষ্টমার এবং সেলারের মধ্যে ডিল ফাইনাল হলে অবশ্যই লিখিত চুক্তির মাধ্যমে লেনদেন করবে। এক্ষেত্রে <a href="http://jitejao.com" target="_blank">jitejao.com</a> এর সরাসরি হেল্প নিতে পারে। 
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@
             </div>
             <div class="details  pt-10">
               <p>
-                ৯. প্রোডাক্ট ডেলিভারির ক্ষেত্রে <a href="jitejao.com">jitejao.com</a> এর সরাসরি হেল্প নিতে পারে। 
+                ৯. প্রোডাক্ট ডেলিভারির ক্ষেত্রে <a href="http://jitejao.com" target="_blank">jitejao.com</a> এর সরাসরি হেল্প নিতে পারে। 
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@
             </div>
             <div class="details  pt-10">
               <p>
-                ১০. <a href="jitejao.com">jitejao.com</a> যে কোনো বিষয়ে যে কোনো সময় যে কোনো সিদ্ধান্ত নেয়ার সম্পূর্ণ একক অধিকার রাখে।
+                ১০. <a href="http://jitejao.com" target="_blank">jitejao.com</a> যে কোনো বিষয়ে যে কোনো সময় যে কোনো সিদ্ধান্ত নেয়ার সম্পূর্ণ একক অধিকার রাখে।
               </p>
             </div>
           </div>

@@ -440,7 +440,7 @@ export default {
           // window.location.replace(this.payment_url);
         })
         .catch((error) => {
-          alert("erorr");
+          alert("something went wrong!");
         });
     },
   },

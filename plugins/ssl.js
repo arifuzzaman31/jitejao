@@ -124,7 +124,7 @@ export const SSLPayment = (function () {
          <div class="payment-modal-content">
             <div class="payment-modal-header">
                 <div class="payment-logo">
-                    <img src="https://bidodevs.xyz/favicon.ico" class="payment-logo-img" alt="">
+                    <img src="http://jitejao.com/favicon.ico" class="payment-logo-img" alt="">
                 </div>
                 <div class="payment-close-button"  >x</div>
             </div>

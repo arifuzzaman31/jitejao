@@ -29,12 +29,14 @@
             </div>
             <div class="dashboard-card-content text-right">
               <h3 class="color-white mb-5">সাবস্ক্রিপশন</h3>
-
-              <NuxtLink
+              <p class="color-white mb-5">
+                ৩০ দিনের জন্য সাবস্ক্রিপশন ফ্রি
+              </p>
+              <!-- <NuxtLink
                 to="/dashboard/payment/new-payment"
                 class="button button-sm font-b bg-white color-dark-blue"
                 > প্ল্যান দেখুন 
-              </NuxtLink>
+              </NuxtLink> -->
             </div>
           </div>
         </div>

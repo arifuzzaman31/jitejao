@@ -1,7 +1,8 @@
 <template>
   <b-container>
+
     <b-row>
-      <div class="col-md-12 ">
+      <div class="col-md-12  d-none d-sm-block">
         <div class="category-form mt-30  clearfix bg-gray-op-50">
           <!-- <a
             href=""
@@ -70,6 +71,80 @@
     </b-row>
     <!-- dasktop device -->
 
+
+    <b-row>
+      <div class="d-block d-sm-none float-right mt-10 w-100 mr-15 text-right" v-on:click="isHide = !isHide">
+      <a href="#"><i class="fas fa-filter"></i></a>
+      </div>
+      <div class="col-md-12 " v-if="!isHide">
+        <div class="category-form mt-5  clearfix bg-gray-op-50">
+          <!-- <a
+            href=""
+            class="btn btn-danger mb-2 mt-2"
+            @click.prevent="switchFilter()"
+            ><span v-if="!show_filter">ফিল্টার</span>
+            <span v-else>হাইড ফিল্টার</span></a> -->
+
+          <b-form class="">
+            <div class="col-md-4 mb-xs-15">
+              <div class="position-relative">
+              <input
+                ref="searchbar"
+                id="searchbar"
+                type="text"
+                v-model="keyword"
+                @keyup="keywordChanged()"
+                class="input-form form-control form-control-h40"
+                placeholder="tshirt, furniture, food …"
+                autofocus="autofocus"
+              />
+                <img
+                  src="~/assets/images/icon/add-search-mobile.svg"
+                  class="img-fluid search-mobile-icon"
+                />
+             </div>
+            </div>
+
+            <div class="col-md-4 mb-xs-15">
+              <multiselect
+                v-model="area"
+                :options="areas"
+                :custom-label="customAreaLabel"
+                placeholder="লোকেশন"
+                label="area_name"
+                track-by="id"
+                class="select"
+                @input="locationChanged()"
+              ></multiselect>
+            </div>
+            <div class="col-md-4 mb-xs-15">
+              <multiselect
+                v-model="category"
+                :options="categories"
+                :custom-label="customCategoryLabel"
+                placeholder="ক্যাটাগরি"
+                label="name"
+                track-by="id"
+                class="select"
+                @input="onCategoryChange()"
+              ></multiselect>
+            </div>
+ 
+            <!-- <div class="col-md-3 mb-xs-15">
+              <a
+                href=""
+                @click.prevent="clearFilterChange()"
+                style="padding: 14px 14px"
+                class="button button-sm color-black color-green bg-green-op-20 w-xs-100 w-100"
+                >ক্লিয়ার ফিল্টার</a
+              >
+            </div> -->
+          </b-form>
+        </div>
+      </div>
+    </b-row>
+    <!-- mobile device -->
+
   
 
     <b-row>
@@ -123,6 +198,7 @@ export default {
   components: { Multiselect },
   data() {
     return {
+      isHide: true,
       AdvanchSearchHideShow: false,
       demandList: [],
       current_page: 1,
@@ -157,6 +233,7 @@ export default {
 
     this.setDemandList(response);
     
+    
   },
 
   watch: {
@@ -164,8 +241,9 @@ export default {
       this.$fetch();
     },
   },
-
+  
   created() {
+    this.isHide = this.$route.query.from == 'searchbar' ? false : true;
     this.getAreaList();
     this.getCategoryList();
     

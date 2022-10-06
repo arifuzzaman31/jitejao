@@ -2020,8 +2020,8 @@ hr{
    margin: 0 auto;
  }
    .category-list  .post-image img{
-    height: auto;
-    width: 100%;
+    /* height: auto;
+    width: 100%; */
   }
   .buyer-public-list ul li{
     margin-right: 9px !important;

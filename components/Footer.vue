@@ -81,11 +81,11 @@
                         <i class="fas fa-angle-right"></i> গাইডলাইন</NuxtLink
                       >
                     </li>
-                    <li>
+                    <!-- <li>
                       <NuxtLink to="/faq">
                         <i class="fas fa-angle-right"></i> এফএকিও</NuxtLink
                       >
-                    </li>
+                    </li> -->
 
                     <li>
                       <NuxtLink to="/terms"

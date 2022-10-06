@@ -33,7 +33,7 @@
             <div class="main-menu">
               <div class="display-fl">
                 <div class="d-none d-sm-block">
-                <NuxtLink to="/new-post " title="New Post">
+                <NuxtLink to="/new-post" title="New Post">
                 <span class="notification-icon">
                    <a href="#" class="button button-small gradient-purple-secondary color-white bid-button" style="margin-left:-15px">পোস্ট করুন</a>
                 </span>

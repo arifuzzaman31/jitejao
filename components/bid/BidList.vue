@@ -82,57 +82,24 @@
        <div class="p10 mt-20">
 
          <div class="mb-30">
-           <h5> সকল বিড</h5>
+           <h5> </h5>
            <div class="content">
              <ul>
                <li><i class="fas fa-check mr-15 color-purple"></i> 
-                   ডাউনলোড করুন জিতে যাও এপ্স আর নিয়ে নিন ৭ দিন সাবস্ক্রিপশন ফ্রি !
+                এখানে যতগুলো বিড পড়বে, সেগুলো থেকে আপনার প্রয়োজনীয় কিছু বিডকে শর্টলিস্ট করুন। 
                </li>
                 <li><i class="fas fa-check mr-15 color-purple"></i> 
-                   ডাউনলোড করুন জিতে যাও এপ্স আর নিয়ে নিন ৭ দিন সাবস্ক্রিপশন ফ্রি !
+                  শর্টলিস্ট করার পর আপনি সেলারের ফোন নাম্বার পাবেন। 
                </li>
                 <li><i class="fas fa-check mr-15 color-purple"></i> 
-                   ডাউনলোড করুন জিতে যাও এপ্স আর নিয়ে নিন ৭ দিন সাবস্ক্রিপশন ফ্রি !
+                  সেলারও আপনার ফোন নাম্বার পাবে। ফোনে বিস্তারিত কথা বলার পর যে কোনো একজনকে কনফার্ম করে বিজয়ী করুন।
                </li>
              </ul>
          </div>
          </div>
          <!-- end of guideline -->
 
-         <div class="mb-30">
-           <h5>  শর্টলিস্ট </h5>
-           <div class="content">
-             <ul>
-               <li><i class="fas fa-check mr-15 color-purple"></i> 
-                   ডাউনলোড করুন জিতে যাও এপ্স আর নিয়ে নিন ৭ দিন সাবস্ক্রিপশন ফ্রি !
-               </li>
-                <li><i class="fas fa-check mr-15 color-purple"></i> 
-                   ডাউনলোড করুন জিতে যাও এপ্স আর নিয়ে নিন ৭ দিন সাবস্ক্রিপশন ফ্রি !
-               </li>
-                <li><i class="fas fa-check mr-15 color-purple"></i> 
-                   ডাউনলোড করুন জিতে যাও এপ্স আর নিয়ে নিন ৭ দিন সাবস্ক্রিপশন ফ্রি !
-               </li>
-             </ul>
-         </div>
-         </div>
-         <!-- end of guideline -->
-         <div class="mb-30">
-           <h5>  কনফার্ম বিড</h5>
-           <div class="content">
-             <ul>
-               <li><i class="fas fa-check mr-15 color-purple"></i> 
-                   ডাউনলোড করুন জিতে যাও এপ্স আর নিয়ে নিন ৭ দিন সাবস্ক্রিপশন ফ্রি !
-               </li>
-                <li><i class="fas fa-check mr-15 color-purple"></i> 
-                   ডাউনলোড করুন জিতে যাও এপ্স আর নিয়ে নিন ৭ দিন সাবস্ক্রিপশন ফ্রি !
-               </li>
-                <li><i class="fas fa-check mr-15 color-purple"></i> 
-                   ডাউনলোড করুন জিতে যাও এপ্স আর নিয়ে নিন ৭ দিন সাবস্ক্রিপশন ফ্রি !
-               </li>
-             </ul>
-         </div>
-         </div>
-         <!-- end of guideline -->
+
 
        </div>
       </div>

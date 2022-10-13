@@ -3,12 +3,13 @@ import fs from 'fs'
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'JiteJao | জিতে যাও ',
+    title: 'JiteJao | জিতে যাও বাংলাদেশের প্রথম এবং একমাত্র ডিমান্ড বেসড মার্কেটপ্লেস।  ',
     meta: [
       { charset: 'utf-8' },
       { name:'google', content:'notranslate'},
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'জিতে যাও বাংলাদেশের প্রথম ডিমান্ড বেইজড মার্কেটপ্লেস যেখানে একজন কাস্টমার নিজের প্রয়োজনীয় যেকোনো প্রোডাক্ট কিনতে পোস্ট (ডিমান্ড পোস্ট) করবে। আবার সেলাররা সেইসব পোস্টে নিজেদের সুবিধামত প্রাইস দিয়ে বিড করবে। ' },
+      {  name:"keywords", content:"Jite Jao, demand, bid, bidding, online business, tshirt, Electronics "}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

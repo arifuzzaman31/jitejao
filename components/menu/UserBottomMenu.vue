@@ -6,12 +6,12 @@
           <ul>
 
             <li>
-              <NuxtLink to="/post?from=searchbar">
+              <NuxtLink to="/">
                 <img
-                  src="~/assets/images/icon/add-search-mobile.svg"
+                  src="~/assets/images/icon/home-mobile.svg"
                   class="img-fluid mobile-icon"
                 />
-                <span>সার্চ</span>
+                <span>হোম </span>
               </NuxtLink>
             </li>
 
@@ -142,7 +142,7 @@
   export default {
     data() {
       return {
-        
+
       }
     }
   }

@@ -53,15 +53,15 @@
                 <!-- <b :class="total_page.unread > 0 ? 'btnred' : ''"></b> -->
                 <span v-if="total_page.unread > 0" class="bg-red color-white notificationTopNumber">{{total_page.unread}}</span>
                 </span>
-                 
+
                  <div class="">
                 <span  v-if="$auth.loggedIn"  v-b-toggle.sidebar-backdrop1
                   ><img :src="$auth.user.avatar" class="rounded-circle" style="height:30px;width:30px" :title="$auth.user.name" alt="avatar">
-                  <span></span> 
+                  <span></span>
                   <i class="fas fa-sort-down"></i>
                 </span>
                 <span v-else   v-b-toggle.sidebar-backdrop1
-                  >একাউন্ট 
+                  >একাউন্ট
                   <i class="fas fa-sort-down"></i>
                 </span>
               </div>
@@ -69,7 +69,7 @@
             </div>
           </div>
          </div>
-           
+
       <div class="col-md-12 d-block d-sm-none d-xl-none d-lg-none mt-10">
            <!-- import header search componet here  -->
            <header-search />
@@ -106,7 +106,7 @@
 
             </div>
 
-            
+
             <div v-else  class="d-flex h-100">
               <div class="align-self-center mt-50 w-100">
                  <div class="m-auto w-90"><h6 class="text-center border-0 p10 color-purple bg-purple-op-20 br-5 ">কোনো নোটিফিকেশন পাওয়া যায়নি </h6></div>
@@ -126,7 +126,7 @@
       </b-row> -->
  <div>
     <b-sidebar
-      
+
       id="sidebar-backdrop1"
       title=""
       :backdrop-variant="variant"
@@ -170,7 +170,7 @@
               </li>
               <li>
                 <NuxtLink v-if="$auth.loggedIn" to="/post">
-                    সকল পোস্ট 
+                    সকল পোস্ট
                 </NuxtLink>
               </li>
 
@@ -215,7 +215,7 @@
 import { mapState } from "vuex";
 import HeaderSearch from '../common/HeaderSearch.vue';
 export default {
-  components : 
+  components :
   {
     'header-search' : HeaderSearch,
   },
@@ -351,14 +351,14 @@ export default {
 .b-sidebar > .b-sidebar-body::-webkit-scrollbar-track,
 .b-sidebar > .b-sidebar-body::-moz-scrollbar-track {
   border-radius: 10px;
- 
+
 }
 
 .b-sidebar > .b-sidebar-body::-webkit-scrollbar-thumb,
 .b-sidebar > .b-sidebar-body::-moz-scrollbar-thumb {
   border-radius: 10px;
-  box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
   background-color: rgb(0, 129, 6) !important;
 }
 .b-sidebar > .b-sidebar-body::-webkit-scrollbar-button,
@@ -371,7 +371,7 @@ export default {
   transition: 1s ease all;
 }
 .header-main-menu img.main-logo{
-  /* width: 90px; */
+  width: 145px;
 }
 
 .header-main-menu.onScroll-header {

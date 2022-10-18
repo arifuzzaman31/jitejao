@@ -55,7 +55,7 @@
                 @input="onCategoryChange()"
               ></multiselect>
             </div>
- 
+
             <!-- <div class="col-md-3 mb-xs-15">
               <a
                 href=""
@@ -72,8 +72,8 @@
     <!-- dasktop device -->
 
 
-    <b-row>
-      <div class="d-block d-sm-none float-right mt-10 w-100 mr-15 text-right" v-on:click="isHide = !isHide">
+    <b-row class="d-block d-sm-none ">
+      <div class="float-right mt-10 w-100 mr-15 text-right" v-on:click="isHide = !isHide">
       <a href="#"><i class="fas fa-filter"></i></a>
       </div>
       <div class="col-md-12 " v-if="!isHide">
@@ -129,7 +129,7 @@
                 @input="onCategoryChange()"
               ></multiselect>
             </div>
- 
+
             <!-- <div class="col-md-3 mb-xs-15">
               <a
                 href=""
@@ -145,7 +145,7 @@
     </b-row>
     <!-- mobile device -->
 
-  
+
 
     <b-row>
       <div class="col-md-12">
@@ -161,7 +161,7 @@
     </b-row>
  <DemandListSkelton v-if="$fetchState.pending && current_page <= 1" />
     <b-row>
-     
+
       <div
         class="col-lg-3 col-md-4 col-sm-6 mb-30"
         v-for="(demand, ind) in demandList.data"
@@ -232,8 +232,8 @@ export default {
     );
 
     this.setDemandList(response);
-    
-    
+
+
   },
 
   watch: {
@@ -241,12 +241,12 @@ export default {
       this.$fetch();
     },
   },
-  
+
   created() {
     this.isHide = this.$route.query.from == 'searchbar' ? false : true;
     this.getAreaList();
     this.getCategoryList();
-    
+
   },
 
   methods: {
@@ -283,7 +283,7 @@ export default {
       if(this.keyword != '' && this.keyword != null)
         {
           this.$router.replace({name: 'post', query: {...this.$route.query, keyword: this.keyword}})
-          // this.$refs.searchbar.focus(); 
+          // this.$refs.searchbar.focus();
         }
         else
         {
